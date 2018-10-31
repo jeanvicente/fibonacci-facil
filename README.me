@@ -1,0 +1,32 @@
+# fibonacci-facil
+#include "stdio.h"
+ 
+
+void main()
+{
+ 
+  int a, b, auxiliar, i, n;
+ 
+ 
+  a = 0;
+  b = 1;
+ 
+ 
+  printf("Digite um número: ");
+
+  scanf("%d", &n);
+  printf("Série de Fibonacci:\n");
+  printf("0\n");
+  printf("%d\n", b);
+ 
+  
+  for(i = 0; i < n-2; i++)
+  {
+    auxiliar = a + b;
+    a = b;
+    b = auxiliar;
+ 
+  
+    printf("%d\n", auxiliar);
+  }
+}
